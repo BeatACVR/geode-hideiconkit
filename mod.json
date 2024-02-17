@@ -1,0 +1,22 @@
+{
+	"geode": "2.0.0-beta.19",
+	"version": "v1.0.0",
+	"id": "beat.hide-icon-kit",
+	"name": "Hide Icon Kit",
+	"developer": "Beat",
+	"gd": {
+		"android": "2.205",
+        "win": "2.204",
+		"mac": "2.200"
+	},
+	"description": "Hides the icon kit button. That it. That's the mod.",
+	"settings": {
+		"mod-enabled": {
+			"name": "Enable the mod",
+			"description": "Hides the icon kit button. This is disabled by default.",
+			"type": "bool",
+			"default": false
+		}
+	},
+	"repository": "https://github.com/BeatACVR/geode-hideiconkit"
+}
