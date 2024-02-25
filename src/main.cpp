@@ -12,7 +12,7 @@ class $modify(MenuLayer) {
 		auto modEnabled = Mod::get()->getSettingValue<bool>("mod-enabled");
 		
 		if(modEnabled){
-			button->removeChild();
+			button->setVisible(false);
 		}
 
 		return true;
