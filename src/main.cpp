@@ -4,9 +4,9 @@
 using namespace geode::prelude;
 
 class $modify(MenuLayer) {
-	static void onModify(auto& self) {
+	/*static void onModify(auto& self) {
         	self.setHookPriority("MenuLayer::init", 6099);
-    	}
+    	}*/
 	bool init() {
 		if (!MenuLayer::init()) 
       			return false;
