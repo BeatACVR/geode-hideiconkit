@@ -10,13 +10,14 @@ class $modify(MenuLayer) {
 	bool init() {
 		if (!MenuLayer::init()) 
       			return false;
+
+		if (!Mod::get()->getSettingValue<bool>("mod-enabled"))
+			return true;
 		
-		auto button = this->getChildByID("icon-kit-button");
-		auto modEnabled = Mod::get()->getSettingValue<bool>("mod-enabled");
+		auto mainMenuButtons = this->getChildByID("main-menu");
+		auto button = mainMenuButtons->getChildByID("icon-kit-button");
 		
-		if(modEnabled){
-			button->setVisible(false);
-		}
+		button->setVisible(false);
 
 		return true;
 	} 
